@@ -72,6 +72,9 @@ print("\n The Normalized Values: \n", X_normalized)
 
 OUTPUT:
 
+<img width="591" height="371" alt="image" src="https://github.com/user-attachments/assets/7fefb59b-fcc1-45ab-8853-821717ed04dc" />
+
+
 Problem 2: DIVISIBLE BY 3 PROBLEM
 
 PROBLEM
@@ -114,3 +117,4 @@ print ("\nThe values that are divisible by 3: In\n", div_by_3)
 ```
 
 OUTPUT:
+<img width="683" height="351" alt="image" src="https://github.com/user-attachments/assets/f6bb2ca9-4eae-4e1d-8a3e-67dd76a04bfc" />
