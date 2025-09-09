@@ -1,68 +1,67 @@
-# Experiment2_Domingo-M
+# Experiment 2: Numerical Python (NumPy)
 
-Experiment 2: Numericak Python (NumPy)
-Submitted By: DOMINGO, Mariedel O.
+**Submitted by:** Mariedel O. Domingo  
 
-I. INTRODUCTION
+## I. Introduction
 
-Intended Learning Outcomes
+### Intended Learning Outcomes
 - In this experiment, the primary objective is to develop a Python code within the Jupyter notebook, utilizing the Numpy library to address the provided problems.
 
+## II. Instructions
 
-II. INSTRUCTIONS
+### Problem 1: **Normalization Problem**
 
-Problem 1: NORMALIZATION PROBLEM
+Normalization is a basic data preprocessing technique involving:
+- **Centering**: Subtracting the mean from each data point.
+- **Scaling**: Dividing by the standard deviation.
 
-Normalization is one of the most basic preprocessing techniques in data analytics. This involves centering and scaling process. Centering means subtracting the data from the mean and scaling means dividing with its standard deviation. 
+**Mathematically, normalization can be expressed as:**
 
-Mathematically, normalization can be expressed as: 
+#### Z = (matrix - mean)/standard_deviation. 
 
-Z = (matrix - mean)/standard_deviation. 
-
-Task
-1. Make a random 5×5 array.
+#### **Tasks:**
+1. Generate a random 5×5 array.
 2. Normalize it using the formula above.
-3. Save the normalized array to a file named X_normalized.npy.
+3. Save the normalized array to a file named `X_normalized.npy`.
 
-Problem 2: DIVISIBLE BY 3 PROBLEM
+---
 
-Task
-1. Create a 10 x 10 NumPy array of the squares of the first 100 positive integers.
-2. From this array, find all elements divisible by 3.
-3. Save the result (those divisible by 3) as a .npy file called div_by_3.npy.
+### Problem 2: **Divisible by 3 Problem**
 
-II. SOLUTIONS
+#### **Tasks:**
+1. Create a 10×10 NumPy array containing the squares of the first 100 positive integers.
+2. Identify elements divisible by 3.
+3. Save the resulting array to a file named `div_by_3.npy`.
 
-Problem 1: NORMALIZATION PROBLEM
+---
 
- **$\color{lightblue}{Utilize\ the\ following\ import\ convention}$** to access the library that will be used throughout the program.
+## III. Solutions
+
+---
+
+### Problem 1: Normalization Problem
+
+**Import the required library:**
 
 ```python
 import numpy as np
 ```
-
-Next by utilizing the np.random.random function make a random 5×5 array the data in the created array will be utilized this will be the one calculatexd
-
-
+#### Step 1: Create a random 5×5 array
 ```python
- x = np.random.random([5,5])
+x = np.random.random((5, 5))
 ```
 
-To calculatevthe normalized value, create a function stored in X_normalized that will help calculate the arrat
-
+#### Step 2: Normalize the array
 ```python
  X_normalized = (x-x.mean() / x. std()
 ```
 
-Save the normalized values by utilizing the np.save function
-
+#### Step 3: Save the normalized array
 ```python
 np. save ('X_normalized.npy', X_normalized) 
 ```
 
-
-The following functions will display the matrix
-
+#### Step 4: Display the results
 ```python
 print ("The Matrix: \n\n", x)
 print ("\nThe Mean: ", x.mean ())
@@ -70,51 +69,43 @@ print("The Standard Deviation:", x.std())
 print("\n The Normalized Values: \n", X_normalized)
 ```
 
-OUTPUT:
+#### OUTPUT:
 
 <img width="591" height="371" alt="image" src="https://github.com/user-attachments/assets/7fefb59b-fcc1-45ab-8853-821717ed04dc" />
 
 
-Problem 2: DIVISIBLE BY 3 PROBLEM
+### Problem 2: DIVISIBLE BY 3 PROBLEM
 
-PROBLEM
-
- **$\color{lightblue}{Utilize\ the\ following\ import\ convention}$** to access the library that will be used throughout the program.
-
+#### Import the required library:
 ```python
 import numpy as np
 ```
 
-This function creates ndarrays withing a specific range
-
+#### Step 1: Create an array of squares from 1 to 100
 ```python
 A = np-arange (1, 101) **2
 ```
 
-Reshape into 10x10 arrays
-
+#### Step 2: Reshape into a 10×10 array
 ```python
 A = A. reshape (10, 10)
 ```
-
-This function will filter the elements that are divisible by 3
-
+#### Step 3: Filter elements divisible by 3
 ```python
 div_by_3 = A[A % 3 == 0]
 ```
 
-Save the the result as div_by_3.npy 
-
+#### Step 4: Save the filtered results
 ```python
 np.save('div_by_3.npy', div_by_3)
 ```
 
-Display the original array and the filtered result 
+#### Display the original array and the filtered result 
 
 ```python
 print ("The Original Array: In\n", A)
 print ("\nThe values that are divisible by 3: In\n", div_by_3)
 ```
 
-OUTPUT:
+#### OUTPUT:
 <img width="683" height="351" alt="image" src="https://github.com/user-attachments/assets/f6bb2ca9-4eae-4e1d-8a3e-67dd76a04bfc" />
