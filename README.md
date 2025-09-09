@@ -17,7 +17,7 @@ Normalization is a basic data preprocessing technique involving:
 
 **Mathematically, normalization can be expressed as:**
 
-#### Z = (matrix - mean)/standard_deviation. 
+ - **Z = (matrix - mean)/standard_deviation.**
 
 #### **Tasks:**
 1. Generate a random 5×5 array.
